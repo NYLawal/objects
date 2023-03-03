@@ -57,11 +57,7 @@ musa.JambScores = musaJambScores;
  Example: let ibrahim = JSON.parse(JSON.stringify(musa));
 
  4. The structuredClone() method
- Example: let ibrahim = structuredClone(musa);
-
- NOTE: Each method comes with its limitation. The first and second create shallow copies i.e one-level-deep copy, while the 
-       third and fourth create deep ones. However, the third method doesn't work with functions and can give unexpected results 
-       in some cases. The fourth method is quite reliable for deep copying but may not be supported by some browsers. */
+ Example: let ibrahim = structuredClone(musa); */
 
 
 
@@ -79,7 +75,3 @@ const presidentialCandidates = {
     console.log(`${presidentialCandidates[candidate]} is the presidential candidate of ${candidate}`);
 } 
 
-// Testing out the for-Of loop
-/* for (const cand of Object.keys(presidentialCandidates)) {  
-    console.log(`${presidentialCandidates[cand]} is the presidential candidate of ${cand} `)
-}*/ 
